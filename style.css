@@ -1,0 +1,41 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background: #343a40;
+    color: white;
+}
+
+header .navbar-brand {
+    font-size: 1.5rem;
+}
+
+section {
+    padding: 2rem 0;
+}
+
+.card {
+    border: none;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    background: #343a40;
+    color: white;
+    padding: 1rem 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .card img {
+        height: 200px;
+        object-fit: cover;
+    }
+}
+

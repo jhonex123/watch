@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-dark">
+
+    <style>
+        .price {
+            color: red;
+        }
+
+        .row {
+            background-color: brown;
+        }
+
+        .contact {
+            color: brown;
+        }
+
+       
+    </style>
+
+    <!-- Header -->
+    <header class="bg-dark text-red-900 p-3">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <a class="navbar-brand" href="#">JAM WATCH</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#products">Products</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+
+    <!-- Product Section -->
+   
+    <section id="products" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Our Products</h2>
+                <div class="row">
+                    <div class="col-md-3 col-sm-6 mb-4">
+                        <div class="card h-100">
+                            <img src="./images/ahmadreza-rezaie-GsVSvlbjL3U-unsplash.jpg" class="card-img-top" alt="Product 1">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">CASIO</h5>
+                                <p class="card-text"> <span class="price">$5000</span>.</p>
+                                <a href="#" class="btn btn-primary">Shop Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 mb-4">
+                        <div class="card h-100">
+                            <img src="./images/domino-studio-p2WUEFGrAdA-unsplash.jpg" class="card-img-top" alt="Product 2">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">ROLEX</h5>
+                                <p class="card-text"> <span class="price">$5000</span>.</p>
+                                <a href="#" class="btn btn-primary">Shop Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 mb-4">
+                        <div class="card h-100">
+                            <img src="./images/pat-taylor-12V36G17IbQ-unsplash.jpg" class="card-img-top" alt="Product 3">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">TIMEX</h5>
+                                <p class="card-text"> <span class="price">$40,000</span>.</p>
+                                <a href="#" class="btn btn-primary">Shop Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 mb-4">
+                        <div class="card h-100">
+                            <img src="./images/shreesha-bhat-lz6z9GZu8hk-unsplash (1).jpg" class="card-img-top" alt="Product 4">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">CITIZEN</h5>
+                                <p class="card-text"> <span class="price">$10,000</span>.</p>
+                                <a href="#" class="btn btn-primary">Shop Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+   
+       
+
+       <!-- contact section -->
+       <h1 class="text-center"> <span class="text-PRIMARY">CONTACT</span></h1>
+       <form id="contact" name="contact" method="post" class="text-DANGER">
+           <div class="mb-5">
+               <div class="col">
+                   <label>First Name</label>
+                   <input type="text" required maxlength="50" class="form-control" id="first_name" name="first_name">
+               </div>
+               <div class="col">
+                   <label>Last Name</label>
+                   <input type="text" required maxlength="50" class="form-control" id="last_name" name="last_name">
+               </div>
+           </div>
+           <div class="mb-5">
+               <div class="col">
+                   <label for="email_addr">Email address</label>
+                   <input type="email" required maxlength="50" class="form-control" id="email_addr" name="email"
+                       placeholder="name@example.com">
+               </div>
+               <div class="col">
+                   <label for="phone_input">Phone</label>
+                   <input type="tel" required maxlength="50" class="form-control" id="phone_input" name="Phone"
+                       placeholder="Phone">
+               </div>
+           </div>
+           <div class="mb-5">
+               <label for="message">Message</label>
+               <textarea class="form-control" id="message" name="message" rows="5"></textarea>
+           </div>
+           <button type="submit" class="btn btn-primary px-4 btn-lg">Post</button>
+       </form>
+
+       <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 offset-md-2">
+                    <h2 class="text-center mb-4">About Us</h2>
+                    <p class="text-center lead">WatchLocker is the one stop online watch store for genuine affordable luxury watches from global brands.</p>
+                    <p class="text-center">Established in 2011, we are committed to bringing you the best.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center p-3">
+        <div class="container">
+            <p>&copy; 2024 BrandName. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
